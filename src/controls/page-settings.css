@@ -1,0 +1,56 @@
+/* 用紙サイズセレクタと向きセレクタのスタイル */
+.cnt-paper-size-selector,
+.cnt-paper-orientation-selector {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cnt-paper-size-selector label,
+.cnt-paper-orientation-selector label {
+    width: 120px; /* ラベルの幅を揃える */
+    padding-right: 0.5em; /* ラベルとセレクタの間のスペース */
+    text-align: right; /* ラベルのテキストを右揃えにする */
+}
+
+.cnt-paper-size-selector select,
+.cnt-paper-orientation-selector select {
+    width: 100px;
+    text-align: center;
+}
+
+/* マージン設定エリアのスタイル */
+
+.cnt-margin-grid {
+    display: grid;
+    grid-template-columns: auto 30px auto; /* リンクボタンと入力フィールドを小さく設定 */
+    gap: 5px; /* 間隔を少し小さくする */
+}
+
+.cnt-margin-item {
+    display: flex;
+    align-items: center;
+}
+
+.cnt-margin-item label {
+    padding-right: 0.5em; /* ラベルと入力ボックスの間のスペース */
+}
+
+.cnt-margin-item input {
+    width: 50px; /* 入力フィールドの幅を小さく設定 */
+    text-align: right;
+}
+
+/* リンクボタンのスタイル */
+.cnt-margin-link-button {
+    width: 20px; /* ボタンの幅を小さく設定 */
+    height: 20px; /* ボタンの高さを設定 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cnt-margin-link-button .material-icons {
+    font-size: 18px; /* アイコンのサイズを小さく設定 */
+}

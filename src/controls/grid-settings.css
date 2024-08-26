@@ -1,0 +1,91 @@
+.grid-settings-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.grid-settings-line label {
+    min-width: 50px;
+}
+
+.grid-settings-line input + label {
+    min-width: 70px;
+}
+
+.grid-settings-line div {
+    display: flex;
+    align-items: center;
+}
+
+.grid-settings-line input[type="radio"] {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.settings-panel {
+    display: none; /* 初期状態では非表示 */
+    margin-left: 5px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.settings-panel label {
+    margin-left: 5px;
+}
+
+.settings-panel input[type="number"] {
+    width: 50px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.settings-panel select {
+    margin: 0;
+    padding: 0;
+}
+
+/* グリッド設定のヘッダとフッタ設定に関するスタイル */
+.cnt-header-settings,
+.cnt-footer-settings {
+    margin-top: 10px;
+}
+
+.cnt-header-panel,
+.cnt-footer-panel {
+    margin-left: 0px;
+}
+
+.cnt-header-settings label,
+.cnt-footer-settings label {
+    display: inline-block;
+}
+
+.cnt-header-position,
+.cnt-footer-position {
+    display: inline-block;
+    width: 56%;
+}
+
+.cnt-header-height,
+.cnt-footer-height {
+    display: inline-block;
+    width: 42%;
+}
+
+.cnt-header-position label,
+.cnt-footer-position label,
+.cnt-header-height label,
+.cnt-footer-height label {
+    margin-left: 7px;
+    margin-right: 3px;
+    text-align: right;
+}
+
+.cnt-header-position input,
+.cnt-footer-position input,
+.cnt-header-height input,
+.cnt-footer-height input {
+    width: 40px; /* 入力フィールドの幅 */
+    text-align: right;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form Designer</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cfe-page.css">
+    <script src="cfe-page.js" defer></script>
+    <!-- コントロールの読み込み -->
+    <link rel="stylesheet" href="controls/page-settings.css">
+    <script src="controls/page-settings.js"></script>
+    <link rel="stylesheet" href="controls/grid-settings.css">
+    <script src="controls/grid-settings.js"></script>
+    <!-- /コントロールの読み込み -->
+    <link rel="stylesheet" href="toolbox.css">
+    <script src="toolbox.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="header-left">Left Content</div>
+        <div id="header-center">Center Content</div>
+        <div id="header-right">
+            <div id="zoom-controls">
+                <button id="zoom-out">◀</button>
+                <div id="zoom-level">100%</div>
+                <button id="zoom-in">▶</button>
+                <div id="slider-container">
+                    <input type="range" id="zoom-slider" min="20" max="200" value="100">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="editor-container">
+        <div id="design-area">
+            <div id="paper-container">
+                <!-- 用紙がここにJavaScriptで挿入される -->
+            </div>
+        </div>
+        <div id="toolbox">
+            <!-- ツールボックスの内容 -->
+        </div>
+    </div>
+</body>
+</html>

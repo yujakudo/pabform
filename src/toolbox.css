@@ -1,0 +1,41 @@
+/* ツールボックスのスタイル */
+#toolbox {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--toolbox-background-color);
+    padding: 10px;
+    width: 300px; /* 固定幅 */
+}
+
+/* タブリンクのスタイル */
+.tab-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.tab-link {
+    background-color: var(--border-color);
+    border: none;
+    color: var(--text-color);
+    padding: 5px 10px; /* 小さくする */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px; /* 小さくする */
+    text-align: center;
+    flex: 1;
+    margin: 0 2px;
+}
+
+.tab-link.active {
+    background-color: var(--text-color);
+    color: var(--border-color);
+}
+
+/* タブコンテンツのスタイル */
+.tab-content {
+    background-color: var(--editor-background-color);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    display: none; /* 初期は非表示 */
+}
